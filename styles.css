@@ -1,0 +1,119 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f0e5d8;
+    color: #2e2e2e;
+    margin: 0;
+    padding: 0;
+    background-image: url('background-texture.jpg'); /* Usa una textura para el fondo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffefb5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #3c3c3c;
+    text-shadow: 2px 2px #ffffff;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #3c3c3c;
+}
+
+.image-upload {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffefb5;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#uploadButton {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #f1c40f;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    text-shadow: 1px 1px #000;
+}
+
+#imagePreviewWrapper {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#imagePreview {
+    max-width: 100%;
+    max-height: 400px;
+    border: 2px solid #3c3c3c;
+}
+
+#progressWrapper {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#progressMessage {
+    font-size: 1.2em;
+}
+
+#progressBar {
+    margin-top: 10px;
+    height: 20px;
+    width: 0;
+    background-color: #3498db;
+    transition: width 0.5s;
+}
+
+#results {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffefb5;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#objectList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#objectList li {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+#colorsList div {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin: 5px;
+    border: 2px solid #3c3c3c;
+}
+
+/* Estilo de texto grande y opaco en el fondo */
+.background-words {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 5em;
+    color: rgba(255, 255, 255, 0.1);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    z-index: -1;
+}
