@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arte Inspirado en Van Gogh</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ANALICIS DE IMAGEN</h1>
+        <p>Con IA puedes identificar partes de una imagen y sus coleres.</p>
+    </header>
+    <main>
+        <div class="image-upload">
+            <input type="file" id="imageInput" accept="image/*">
+            <button id="uploadButton">Analizar Imagen</button>
+            <p id="uploadMessage">Carga tu imagen aquí</p>
+            <div id="imagePreviewWrapper" style="display: none;">
+                <img id="imagePreview" alt="Previsualización de la Imagen">
+            </div>
+            <div id="progressWrapper" style="display: none;">
+                <p id="progressMessage">Procesando...</p>
+                <div id="progressBar"></div>
+            </div>
+        </div>
+        <div id="results" style="display: none;">
+            <h2>Resultados</h2>
+            <ul id="objectList"></ul>
+            <div id="colorsList"></div>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
